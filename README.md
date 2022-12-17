@@ -1,9 +1,11 @@
 # JS-game - "Pairs game" or "Memory game"
 
+Check DEMO: **https://batyrdaurov.github.io/js-game-memory/**
+
 Stack:
 
-*  Vanilla JavaScript;
-*  GULP;
+* Vanilla JavaScript;
+* GULP;
 * HTML;
 * SCSS;
 
