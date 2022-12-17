@@ -1,4 +1,4 @@
-# JS-game - "Pairs game" or "Memory game",
+# JS-game - "Pairs game" or "Memory game"
 
 Stack:
 
