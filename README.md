@@ -1,16 +1,15 @@
-# JS-game - "Pairs game" or "Memory game"
+# GOW-Ragnarok | Landing
+This is game, the pet-project of **Batyr Daurov.**
 
-Check DEMO: **https://batyrdaurov.github.io/js-game-memory/**
+Hello, I'm a beginner **front-end developer**, I'm 16 and I'm a student studying web development for about 2 years.
 
-Stack:
+Demo: **https://batyrdaurov.github.io/gow-ragnarok/**
 
-* Vanilla JavaScript;
+### Stack technologies:
+* Vanilla JavaScript (OOP);
 * GULP;
 * HTML;
 * SCSS;
 
-The logic of the game was built on the principles of OOP (Object Oriented Programming)
 
-P.S - This is a pet-project of a beginner Frontend developer
-
-**Batyr Daurov**
+Thank you for your attention.
