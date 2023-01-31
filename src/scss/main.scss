@@ -1,0 +1,16 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/footer";
+@import "./components/game";
+
+:root {
+    --primary-color: #FFE713;
+    --background-color: #0D0F23;
+    --window-color: #020413;
+}

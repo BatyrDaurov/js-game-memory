@@ -1,0 +1,40 @@
+@import './../mixins/breakpoint';
+
+.header {
+    margin-top: 80px;
+    font-family: Roboto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @include medium {
+        margin-top: 50px;
+    }
+    @include small-tablet {
+        text-align: justify;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 9px;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 110%;
+        @include small-tablet {
+            font-size: 32px;
+        }
+    }
+    &__subtitle {
+        margin: 0;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 110%;
+        letter-spacing: 0.05em;
+    }
+}
+.timer {
+    margin: 2rem 0;
+    font-size: 32px;
+}

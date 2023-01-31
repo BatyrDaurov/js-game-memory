@@ -1,0 +1,152 @@
+@import './../mixins/breakpoint';
+.game {
+    &__window {
+        width: 100%;
+        min-height: 200px;
+        padding: 31px 0;
+
+        display: flex;
+        background-color: var(--window-color);
+        border: 3px solid var(--primary-color);
+        border-radius: 10px;
+        @include medium {
+            flex-direction: column;
+        }
+        @include mobile {
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            border: 0;
+            background-color: transparent;
+            border-radius: 0;
+        }
+    }
+    &__grid {
+        position: relative;
+        width: 938px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        gap: 30px;
+        height: 50vh;
+        padding: 0 45px;
+        @include medium {
+            width: 100%;
+        }
+        @include small-tablet {
+            height: 40vh;
+            gap: 20px;
+            padding: 0 20px;
+        }
+        @include mobile {
+            height: 22vh;
+            gap: 15px;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            height: 100%;
+            width: 2px;
+            background: #25294D;
+            border-radius: 10px;
+            @include medium {
+                display: none;
+            }
+        }
+    }
+    &__overlay {
+        width: 168px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 31px;
+        @include medium {
+            margin-top: 40px;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    &__btn {
+        cursor: pointer;
+        transition: transform 0.2s 0s linear;
+        svg {
+            fill: var(--primary-color);
+        }
+        &:hover {
+            transform: translateX(-5px);
+            @include medium {
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+.card {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background: url('');
+    background: #dedede;
+    border: 1px solid var(--primary-color);
+    box-shadow: inset 0px 0px 8px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    transition: 0.15s linear;
+    h1 {
+        font-size: 5em;
+        @include medium {
+            font-size: 4em;
+        }
+        @include small-tablet {
+            font-size: 3em;
+        }
+        @include mobile {
+            font-size: 2em;
+        }
+    }
+    &:hover {
+        transform: translateY(-4px);
+        background: #fefefe;
+    }
+}
+.popup-win {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--window-color);
+    &__link {
+        margin: 0;
+        font-size: 18px;
+        color: #fff;
+    }
+    &__title {
+        margin: 0;
+        color: #fff;
+    }
+    @include lg-desktop {
+        .game__overlay {
+            width: 100%;
+            display: flex;
+            flex-direction: row!important;
+            li {
+                &:hover {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}
